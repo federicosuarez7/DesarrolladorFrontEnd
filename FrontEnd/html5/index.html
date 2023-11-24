@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta datos para el SEO del documento-->
+    <!--Titulo descriptivo de la pagina web-->
     <title> Titulo informativo de la pagina</title>
+    <!--Subtitulo descriptivo de la pagina web-->
     <meta name="description" content="Aqui escribimos el texto que describe de que trata la página">
+    <!--Página canonica del sitio web-->
+    <link rel="canonical" href="https://dominiopropio.com/la-url-canonica">
+    <!--Enlace a hojas de estilo-->
     <link rel="stylesheet" href="assets/estilos.css">
+    <!--Favicon que acompaña al titulo-->
+    <link rel="icon" href="img/huella.png">
+    <!--Favicon que se guarda en un telefono-->
+    <link rel="apple-touch-icon" href="img/huella.png">
 </head>
 <body>
     <!--Comentarios en Html5-->
@@ -75,9 +85,146 @@
     <button type="submit" onclick="alert('Hola hiciste click en el boton')">Enviar</button>
     <hr>
     <h2>Formularios</h2>
-    <input type="text" name="" id="">    
-    <input type="date" name="" id="">
-    <input type="color" name="" id="">
+    <div>
+        <p>
+            Ingresar datos de tipo texto
+        </p>
+        <input type="text" placeholder="Nombre completo">
+    </div>
+    <div>
+        <p>
+            Escoger un color
+        </p>
+        <input type="color">
+    </div>
+    <div>
+        <p>
+            Escoge una fecha
+        </p>
+        <input type="date">
+    </div>
+    <div>
+        <p>
+            Boton para enviar
+        </p>
+        <input type="submit">
+    </div>
+    <div>
+        <p>
+            Resetea todos los casilleros
+        </p>
+        <input type="reset" >
+    </div>
+    <div>
+        <p>
+            Selecciona archivos externos
+        </p>
+        <input type="file" multiple>
+    </div>
+    <div>
+        <p>
+            Para seleccionar opciones
+        </p>
+        <input type="radio">
+    </div>
+    <div>
+        <p>
+            Para seleccionar opciones
+        </p>
+        <input type="checkbox">
+    </div>
+    <div>
+        <p>
+            Para rellenar con un email
+        </p>
+        <input type="email" placeholder="ejemplo@mail.com">
+    </div>
+    <div>
+        <p>
+            Para rellenar con números
+        </p>
+        <input type="number" placeholder="12346">
+    </div>
+    <div>
+        <p>
+            Para rellenar con un número de teléfono
+        </p>
+        <input type="tel" placeholder="2615623669">
+    </div>
+    <div>
+        <p>
+            Para rellenar con un password
+        </p>
+        <input type="password" placeholder="password">
+    </div>
+    <div>
+        <p>
+            Buscador
+        </p>
+        <input type="search">
+    </div>
+    <div>
+        <p>
+            Caja de comentarios
+        </p>
+        <textarea name="" id="" cols="80" rows="10" placeholder="Deja aqui tu comentario"></textarea>
+    </div>
+    <div>
+        <p>
+            Para escoger opciones de una lista desplegable
+        </p>
+        <select>
+            <option value="">opcion 1</option>
+            <option value="">opcion 2</option>
+            <option value="">opcion 3</option>
+        </select>
+    </div>
+    <hr>
+    <h2>Ejemplo de formulario</h2>
+    <form action="">
+        <label for="user">Usuario:</label>
+        <input type="text" name="user" id="user" placeholder="Ingrese tu usuario" required>
+        <br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="password" id="pass" placeholder="Ingresa tu contraseña" required>
+        <br><br>
+        <label for="idioma">Seleciona tu lenguaje:</label>
+        <select name="idioma">
+            <option value="">Ingles</option>
+            <option value="">Frances</option>
+            <option value="">Español</option>
+            <option value="">Ruso</option>
+            <option value="">Chino</option>
+        </select>
+        <br><br>
+        <h3>Escoge tu lenguaje de programacion </h3>
+        <input type="radio" name="lenguaje" id="radio-js" value="javascript">
+        <label for="radio-js">Javascript</label>
+        <input type="radio" name="lenguaje" id="radio-py" value="python">
+        <label for="radio-py">Python</label>
+        <input type="radio" name="lenguaje" id="radio-ja" value="java">
+        <label for="radio-ja">Java</label>
+        <br><br>
+        <textarea name="" id="" cols="60" rows="8" placeholder="Deja aqui tu comentario"></textarea>
+        <br><br>
+        <input type="submit">
+        <br><br>
+        <input type="reset">
+    </form>
+    <hr>
+    <h2>Data atributes</h2>
+    <p>Permiten agregar caracteristicas que luego pueden ser extraidas</p>
+    <ul>
+        <li data-id="1" data-name="spring">Primavera</li>
+        <li data-id="2" data-name="autumn">Otoño</li>
+        <li data-id="3" data-name="summer">Verano</li>
+        <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+        
+    
+    
+    
+    
 
 
 
