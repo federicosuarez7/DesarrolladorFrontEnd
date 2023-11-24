@@ -1,6 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: sans-serif;
 }
 h1{
     color:blue;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
