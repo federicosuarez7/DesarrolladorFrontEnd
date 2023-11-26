@@ -3,10 +3,41 @@ Selectores basicos
 1-Etiquetas html
 2- Identificadores (id #)
 3- Clases (class)
+***Conviene ubicar los estilos por orden alfabetico para luego poder encontrarlos mas rapido*** 
 */
+.bg-skyblue{
+    background-color: skyblue;
+}
+.bg-steelblue{
+    background-color: steelblue;
+}
 h1{
     color: blue;
     background-color: aquamarine;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* 
+    Los selectores de hermanos solo se aplican a los elementos del mismo nivel que estan por debajo
+*/
+.hermanos-general~li{
+    background-color: thistle;
+}
+.hermanos-adyacentes+li{
+    background-color: thistle;
+}
+/* 
+    Los hijos directos son aquellos que se encuentran exactamente un nivel por debajo de la etiqueta padre
+*/
+.hijos-directos>li{
+    background-color: thistle;
+}
+/*
+    Los hijos descendientes son todos aquellos que se encuentran por debajo del nivel de la etiqueta padre
+*/
+.hijos-descendientes b{
+    background-color: thistle;
 }
 p{
     color: midnightblue;
@@ -17,12 +48,11 @@ peso y puede crear conflictos al aplicar los estilos. */
 #parrafo-dos{
     background-color: skyblue;
 }
-/*Conviene ubicar los estilos por orden alfabetico para luego poder encontrarlos mas rapido */ 
-.bg-skyblue{
-    background-color: skyblue;
+.selectores-atributos a[href]{
+    color: orangered;
 }
-.bg-steelblue{
-    background-color: steelblue;
+.selectores-atributos a[target="_blank"]{
+    font-weight: bold;
 }
 .text-20{
     font-size: 20px;
