@@ -1,0 +1,35 @@
+/*
+Selectores basicos
+1-Etiquetas html
+2- Identificadores (id #)
+3- Clases (class)
+*/
+h1{
+    color: blue;
+    background-color: aquamarine;
+}
+p{
+    color: midnightblue;
+}
+/*Dar estilos con id se considera una mala practica, se debe hacer mediante una class
+para que ese estilo pueda ser reutilizable y reducir la cantidad de código. Tambien porque tienen mayor
+peso y puede crear conflictos al aplicar los estilos. */
+#parrafo-dos{
+    background-color: skyblue;
+}
+/*Conviene ubicar los estilos por orden alfabetico para luego poder encontrarlos mas rapido */ 
+.bg-skyblue{
+    background-color: skyblue;
+}
+.bg-steelblue{
+    background-color: steelblue;
+}
+.text-20{
+    font-size: 20px;
+}
+.text-32{
+    font-size: 32px;
+}
+.text-white{
+    color: white;
+}
