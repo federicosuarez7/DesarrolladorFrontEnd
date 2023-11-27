@@ -5,6 +5,11 @@ Selectores basicos
 3- Clases (class)
 ***Conviene ubicar los estilos por orden alfabetico para luego poder encontrarlos mas rapido*** 
 */
+
+/* Selector universal*/
+*{
+    font-family: sans-serif;
+}
 .bg-skyblue{
     background-color: skyblue;
 }
@@ -51,8 +56,21 @@ peso y puede crear conflictos al aplicar los estilos. */
 .selectores-atributos a[href]{
     color: orangered;
 }
+/*
+    Selectores de atributos
+*/
 .selectores-atributos a[target="_blank"]{
     font-weight: bold;
+}
+/* Si agregamos el * solo se aplican los estilos si se contiene la palabra indicada
+    entre " palabra "
+*/
+.selectores-atributos a[href*="cursos"]{
+    font-size: 24px;
+}
+/* Selector universal */
+.selector-universal * {
+    font-size: 24px;
 }
 .text-20{
     font-size: 20px;
