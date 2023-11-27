@@ -3,7 +3,10 @@ Selectores basicos
 1-Etiquetas html
 2- Identificadores (id #)
 3- Clases (class)
-***Conviene ubicar los estilos por orden alfabetico para luego poder encontrarlos mas rapido*** 
+***Conviene ubicar los estilos por orden alfabetico para luego poder encontrarlos mas rapido***
+***Dar estilos con id se considera una mala practica, se debe hacer mediante una class
+para que ese estilo pueda ser reutilizable y reducir la cantidad de código. Tambien porque tienen mayor
+peso y puede crear conflictos al aplicar los estilos***  
 */
 
 /* Selector universal*/
@@ -15,6 +18,15 @@ Selectores basicos
 }
 .bg-steelblue{
     background-color: steelblue;
+}
+.form-pseudoclases *:required{
+    border-color: yellow;
+}
+.form-pseudoclases *:valid{
+    border-color: green;
+}
+.form-pseudoclases *:focus{
+    background-color: skyblue;
 }
 h1{
     color: blue;
@@ -44,15 +56,19 @@ html{
 .hijos-descendientes b{
     background-color: thistle;
 }
+.menu-pseudoclases a:hover{
+    color: orange;
+}
 p{
     color: midnightblue;
 }
-/*Dar estilos con id se considera una mala practica, se debe hacer mediante una class
-para que ese estilo pueda ser reutilizable y reducir la cantidad de código. Tambien porque tienen mayor
-peso y puede crear conflictos al aplicar los estilos. */
 #parrafo-dos{
     background-color: skyblue;
 }
+.p-pseudoclases:hover{
+    font-size: 20px;
+}
+/* Pseudoclases: dan estilos dependiendo del contexto, posicion o estado del elemento */
 .selectores-atributos a[href]{
     color: orangered;
 }
