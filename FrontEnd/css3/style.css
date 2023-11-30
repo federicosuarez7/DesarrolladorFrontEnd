@@ -56,6 +56,15 @@ html{
 .hijos-descendientes b{
     background-color: thistle;
 }
+.lista-pseudoclases li:first-child{
+    color: green;
+}
+.lista-pseudoclases li:last-child{
+    color: blue;
+}
+.lista-pseudoclases li:nth-child(8){
+    color: orange;
+}
 .menu-pseudoclases a:hover{
     color: orange;
 }
