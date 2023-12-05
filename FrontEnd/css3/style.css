@@ -19,6 +19,17 @@ peso y puede crear conflictos al aplicar los estilos***
 .bg-steelblue{
     background-color: steelblue;
 }
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea{
+    border-color: greenyellow;
+    border-width: 2px;
+    border-style: dotted;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+}
 .form-pseudoclases *:required{
     border-color: yellow;
 }
