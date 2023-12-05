@@ -14,3 +14,7 @@ console.log("Variable musica antes del bloque",musica);
     console.log("Variable musica dentro del bloque",musica);
 }
 console.log("Variable musica despues del bloque",musica);
+
+//Variables constantes
+const PI = 3.1416;
+console.log(PI);
