@@ -13,11 +13,32 @@ peso y puede crear conflictos al aplicar los estilos***
 *{
     font-family: sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .bg-skyblue{
     background-color: skyblue;
 }
 .bg-steelblue{
     background-color: steelblue;
+}
+blockquote#cita-marco.cita-marco{
+    background-color: brown;
+}
+blockquote {
+    background-color: aqua;
+}
+#cita-marco{
+    background-color: goldenrod;
+}
+blockquote.cita-marco{
+    background-color: blueviolet;
+}
+.cita-marco {
+    background-color: coral;
+}
+blockquote#cita-marco{
+    background-color: salmon;
 }
 .form-agrupar-selectores input[type="text"],
 .form-agrupar-selectores input[type="email"],
