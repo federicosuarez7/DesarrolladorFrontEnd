@@ -18,3 +18,13 @@ console.log("Variable musica despues del bloque",musica);
 //Variables constantes
 const PI = 3.1416;
 console.log(PI);
+
+//Cadenas de texto
+let nombre="Federico";
+let apellido='Suarez';
+let resultado="Mi nombre completo es: "+nombre+" "+apellido;
+console.log(resultado);
+let resultado2="Mi nombre tiene: "+nombre.length+" letras";
+console.log(resultado2);
+let resultado3="Mi nombre completo en mayúsculas es: ";
+console.log(resultado3+nombre.toUpperCase()+" "+apellido.toUpperCase());
