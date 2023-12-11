@@ -28,3 +28,15 @@ let resultado2="Mi nombre tiene: "+nombre.length+" letras";
 console.log(resultado2);
 let resultado3="Mi nombre completo en mayúsculas es: ";
 console.log(resultado3+nombre.toUpperCase()+" "+apellido.toUpperCase());
+
+//Interpolacion de variables 
+let saludo2 = `Hola estoy usando interpolacion de variables. Mi nombre es ${nombre} y mi apellido ${apellido}.`;
+console.log(saludo2);
+
+let ul = `<ul>
+<li>Primavera</li>
+<li>Verano</li>
+<li>Otoño</li>
+<li>Invierno</li>
+</ul>`;
+console.log(ul);
