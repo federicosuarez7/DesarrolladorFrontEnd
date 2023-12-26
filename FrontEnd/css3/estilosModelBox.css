@@ -7,3 +7,7 @@ h1{
     border-top-color: red;
     border-bottom-color: blue;
 }
+.display{
+    border: 2px seagreen solid;
+    display: inline;
+}
