@@ -4,19 +4,18 @@ function Autos (motor,color,numPasajeros){
     this.motor = motor;
     this.color = color;
     this.numPasajeros = numPasajeros;
-
-    // Metodos
-    this.arrancar = function(){
-        console.log("----El vehiculo arrancó----\n");
-    }
-    this.frenar = function(){
-        console.log("----El vehiculo frenó----\n");
-    }
-    this.estacionar = function(){
-        console.log("----El vehiculo estacionó----\n");
-    }
 }
 
+// Metodos asignados al prototipo
+Autos.prototype.arrancar = function(){
+    console.log("----El vehiculo arrancó----\n");
+}
+Autos.prototype.frenar = function(){
+    console.log("----El vehiculo frenó----\n");
+}
+Autos.prototype.estacionar = function(){
+    console.log("----El vehiculo estacionó----\n");
+}
 // Instanciamos un objeto de Autos
 const renault = new Autos(1600,"azul",5),
     fiat = new Autos(1500,"blanco",2);
