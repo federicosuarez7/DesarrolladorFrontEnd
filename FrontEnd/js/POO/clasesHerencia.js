@@ -10,6 +10,10 @@ class Animal{
     detenerse(){
         console.log(`${this.nombre} se detuvo!`);
     }
+    // Creacion de un metodo estatico
+    static saltar(){
+        console.log("El animal esta saltando!!!!!");
+    }
 }
 
 class Perros extends Animal{
@@ -32,4 +36,5 @@ bito.caminar();
 bito.ladrar();
 bito.moverLaCola();
 bito.detenerse();
-
+// LLamamos al metodo estatico de la clase Animal
+const gato = Animal.saltar();
