@@ -20,6 +20,7 @@ class Perros extends Animal{
     constructor(nombre,tamanio,raza){
         super(nombre,tamanio);
         this.raza = raza;
+        this.color = null;
     }
     // Metodos de clase
     ladrar(){
@@ -27,6 +28,13 @@ class Perros extends Animal{
     }
     moverLaCola(){
         console.log(`Tu mascota,${this.nombre} esta moviendo la cola`);
+    }
+    // Metodos getters and setters
+    get getColor(){
+        return this.color;
+    }
+    set setColor(color){
+        this.color = color;
     }
 }
 
@@ -38,3 +46,6 @@ bito.moverLaCola();
 bito.detenerse();
 // LLamamos al metodo estatico de la clase Animal
 const gato = Animal.saltar();
+// Utilizamos los getters and setters
+bito.setColor = "Blanco con marrón";
+console.log("El color de bito es: "+bito.getColor);
